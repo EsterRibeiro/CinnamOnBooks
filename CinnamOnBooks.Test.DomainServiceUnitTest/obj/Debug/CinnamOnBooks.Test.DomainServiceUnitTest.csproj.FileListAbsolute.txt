@@ -1,0 +1,17 @@
+C:\Users\ester\source\repos\CinnamOnBooks\CinnamOnBooks.Test.DomainServiceUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\ester\source\repos\CinnamOnBooks\CinnamOnBooks.Test.DomainServiceUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\ester\source\repos\CinnamOnBooks\CinnamOnBooks.Test.DomainServiceUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\ester\source\repos\CinnamOnBooks\CinnamOnBooks.Test.DomainServiceUnitTest\bin\Debug\CinnamOnBooks.Test.DomainServiceUnitTest.dll
+C:\Users\ester\source\repos\CinnamOnBooks\CinnamOnBooks.Test.DomainServiceUnitTest\bin\Debug\CinnamOnBooks.Test.DomainServiceUnitTest.pdb
+C:\Users\ester\source\repos\CinnamOnBooks\CinnamOnBooks.Test.DomainServiceUnitTest\bin\Debug\CinnamOnBooks.Domain.Model.dll
+C:\Users\ester\source\repos\CinnamOnBooks\CinnamOnBooks.Test.DomainServiceUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\ester\source\repos\CinnamOnBooks\CinnamOnBooks.Test.DomainServiceUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\ester\source\repos\CinnamOnBooks\CinnamOnBooks.Test.DomainServiceUnitTest\bin\Debug\CinnamOnBooks.Domain.Model.pdb
+C:\Users\ester\source\repos\CinnamOnBooks\CinnamOnBooks.Test.DomainServiceUnitTest\bin\Debug\CinnamOnBooks.Domain.Model.dll.config
+C:\Users\ester\source\repos\CinnamOnBooks\CinnamOnBooks.Test.DomainServiceUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\ester\source\repos\CinnamOnBooks\CinnamOnBooks.Test.DomainServiceUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\ester\source\repos\CinnamOnBooks\CinnamOnBooks.Test.DomainServiceUnitTest\obj\Debug\CinnamOnBooks.Test.DomainServiceUnitTest.csprojAssemblyReference.cache
+C:\Users\ester\source\repos\CinnamOnBooks\CinnamOnBooks.Test.DomainServiceUnitTest\obj\Debug\CinnamOnBooks.Test.DomainServiceUnitTest.csproj.CoreCompileInputs.cache
+C:\Users\ester\source\repos\CinnamOnBooks\CinnamOnBooks.Test.DomainServiceUnitTest\obj\Debug\CinnamOnBooks.Test.DomainServiceUnitTest.csproj.CopyComplete
+C:\Users\ester\source\repos\CinnamOnBooks\CinnamOnBooks.Test.DomainServiceUnitTest\obj\Debug\CinnamOnBooks.Test.DomainServiceUnitTest.dll
+C:\Users\ester\source\repos\CinnamOnBooks\CinnamOnBooks.Test.DomainServiceUnitTest\obj\Debug\CinnamOnBooks.Test.DomainServiceUnitTest.pdb
