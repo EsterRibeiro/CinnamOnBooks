@@ -5,8 +5,9 @@ using System.Collections.Generic;
 
 namespace CinnamOnBooks.Infra.DataAccess.Repositories
 {
-    public class LeitorRepository: ILeitorRepository
+    public class LeitorMemDbRepository : ILeitorRepository
     {
+        private readonly static List<Leitor> _leitor = new List<Leitor>();
 
         public bool Atualizar(Leitor entity)
         {
@@ -15,7 +16,11 @@ namespace CinnamOnBooks.Infra.DataAccess.Repositories
 
         public bool Create(Leitor entity)
         {
-            throw new NotImplementedException();
+            int qtdLeitores = _leitor.Count;
+            _leitor.Add(entity);
+            if (_leitor.Count > qtdLeitores)
+                return true;
+            return false;
         }
 
         public Leitor Read(Guid id)

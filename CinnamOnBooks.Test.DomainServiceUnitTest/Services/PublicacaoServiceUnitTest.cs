@@ -2,6 +2,7 @@
 using CinnamOnBooks.Domain.Model.Entities;
 using CinnamOnBooks.Domain.Model.Interfaces.Repositories;
 using CinnamOnBooks.Domain.Model.Services;
+using CinnamOnBooks.Infra.DataAccess;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
@@ -22,10 +23,8 @@ namespace CinnamOnBooks.Test.DomainServiceUnitTest.Services
             var publicacao = new Publicacao
             {
                 Id = Guid.NewGuid(),
-                Livro.TituloLivro = "Flor de sangue",
-                EdicaoLivro = "1°",
-                Autor = "Waldir Santos",
-                Editora = "Flor"
+                Autor = new Autor { Nome = "Waldir Santos" },
+                Conteudo = "Que dia lindo para ler \"Flôr de Sangue\""
             };
 
             var result = publicacaoService.CriarPublicacao(publicacao);
@@ -34,7 +33,6 @@ namespace CinnamOnBooks.Test.DomainServiceUnitTest.Services
         }
 
         [TestMethod]
-        [ExpectedException(typeof(Exception))]
         public void PublicacaoSemSucesso()
         {
             IPublicacaoRepository publicacaoRepository = new PublicacaoMemDbRepository();
@@ -42,15 +40,12 @@ namespace CinnamOnBooks.Test.DomainServiceUnitTest.Services
             var publicacao = new Publicacao
             {
                 Id = Guid.NewGuid(),
-                TituloLivro = "Flor de sangue",
-                EdicaoLivro = "1°",
-                Autor = "Waldir Santos",
-                Editora = "Flor"
+                Conteudo = "Que dia lindo para ler \"Flôr de Sangue\""
             };
 
             var result = publicacaoService.CriarPublicacao(publicacao);
 
-            Assert.IsFase(result);
+            Assert.IsFalse(result);
         }
 
 

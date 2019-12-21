@@ -1,15 +1,12 @@
 ﻿using CinnamOnBooks.Domain.Model.Entities.Leitores;
 using CinnamOnBooks.Domain.Model.Interfaces.Repositories;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace CinnamOnBooks.Domain.Model.Services
 {
     /// <summary>
-    /// Essa classe permite a criação, alteração e exclusão de um leitor (usuário) na plataforma
+    /// CRUD do objeto leitor
     /// </summary>
     public class LeitorService
     {
@@ -20,8 +17,14 @@ namespace CinnamOnBooks.Domain.Model.Services
             _leitorRepository = leitorRepository;
         }
 
+        /// <summary>
+        /// Teste ao criar o leitor, caso o nome seja nulo, o usuário não é criado
+        /// </summary>
+        /// <param name="leitor"></param>
+        /// <returns></returns>
         public bool CriarLeitor(Leitor leitor)
         {
+            if (leitor.Nome == null) return false;
             _leitorRepository.Create(leitor);
             return true;
         }

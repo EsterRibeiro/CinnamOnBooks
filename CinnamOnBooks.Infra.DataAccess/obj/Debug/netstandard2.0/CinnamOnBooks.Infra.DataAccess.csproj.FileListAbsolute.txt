@@ -1,0 +1,13 @@
+C:\Users\ester.ribeiro\Documents\trabalho\Estudo_DDD\CinnamOnBooks.Infra.DataAccess\bin\Debug\netstandard2.0\CinnamOnBooks.Infra.DataAccess.deps.json
+C:\Users\ester.ribeiro\Documents\trabalho\Estudo_DDD\CinnamOnBooks.Infra.DataAccess\bin\Debug\netstandard2.0\CinnamOnBooks.Infra.DataAccess.dll
+C:\Users\ester.ribeiro\Documents\trabalho\Estudo_DDD\CinnamOnBooks.Infra.DataAccess\bin\Debug\netstandard2.0\CinnamOnBooks.Infra.DataAccess.pdb
+C:\Users\ester.ribeiro\Documents\trabalho\Estudo_DDD\CinnamOnBooks.Infra.DataAccess\bin\Debug\netstandard2.0\CinnamOnBooks.Domain.Model.dll
+C:\Users\ester.ribeiro\Documents\trabalho\Estudo_DDD\CinnamOnBooks.Infra.DataAccess\bin\Debug\netstandard2.0\CinnamOnBooks.Domain.Model.pdb
+C:\Users\ester.ribeiro\Documents\trabalho\Estudo_DDD\CinnamOnBooks.Infra.DataAccess\bin\Debug\netstandard2.0\CinnamOnBooks.Domain.Model.dll.config
+C:\Users\ester.ribeiro\Documents\trabalho\Estudo_DDD\CinnamOnBooks.Infra.DataAccess\obj\Debug\netstandard2.0\CinnamOnBooks.Infra.DataAccess.csprojAssemblyReference.cache
+C:\Users\ester.ribeiro\Documents\trabalho\Estudo_DDD\CinnamOnBooks.Infra.DataAccess\obj\Debug\netstandard2.0\CinnamOnBooks.Infra.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\ester.ribeiro\Documents\trabalho\Estudo_DDD\CinnamOnBooks.Infra.DataAccess\obj\Debug\netstandard2.0\CinnamOnBooks.Infra.DataAccess.AssemblyInfoInputs.cache
+C:\Users\ester.ribeiro\Documents\trabalho\Estudo_DDD\CinnamOnBooks.Infra.DataAccess\obj\Debug\netstandard2.0\CinnamOnBooks.Infra.DataAccess.AssemblyInfo.cs
+C:\Users\ester.ribeiro\Documents\trabalho\Estudo_DDD\CinnamOnBooks.Infra.DataAccess\obj\Debug\netstandard2.0\CinnamOnBooks.Infra.DataAccess.csproj.CopyComplete
+C:\Users\ester.ribeiro\Documents\trabalho\Estudo_DDD\CinnamOnBooks.Infra.DataAccess\obj\Debug\netstandard2.0\CinnamOnBooks.Infra.DataAccess.dll
+C:\Users\ester.ribeiro\Documents\trabalho\Estudo_DDD\CinnamOnBooks.Infra.DataAccess\obj\Debug\netstandard2.0\CinnamOnBooks.Infra.DataAccess.pdb

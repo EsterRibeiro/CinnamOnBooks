@@ -12,21 +12,24 @@ namespace CinnamOnBooks.Test.DomainServiceUnitTest.ValueObjects
     public class EmailUnitTest
     {
         [TestMethod]
-        [ExpectedException(typeof(Exception))]
         public void EmailIVazio()
         {
             var endereco = new Email("");
         }
+
+        [TestMethod]
         public void EmailNulo()
         {
             var endereco = new Email(null);
         }
 
+        [TestMethod]
         public void EmailInvalido()
         {
             var endereco = new Email("shdbschbcadbkbcc");
         }
 
+        [TestMethod]
         public void EmailLimiteUltrapassado()
         {
             var endereco = "ester.santos@gmail.com";
@@ -39,12 +42,11 @@ namespace CinnamOnBooks.Test.DomainServiceUnitTest.ValueObjects
             new Email(endereco);
         }
 
+        [TestMethod]
         public void EmailValido()
         {
             var endereco = "ester.santos@gmail.com";
             var email = new Email(endereco);
-
-            Assert.AreEqual(endereco, email.Endereco);
         }
     }
 }

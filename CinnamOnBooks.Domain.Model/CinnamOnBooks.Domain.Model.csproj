@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CinnamOnBooks.Domain.Model</RootNamespace>
     <AssemblyName>CinnamOnBooks.Domain.Model</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -146,9 +147,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entities\Autor.cs" />
-    <Compile Include="Entities\Base.cs" />
-    <Compile Include="Entities\Editora.cs" />
+    <Compile Include="Aggregations\Autor.cs" />
+    <Compile Include="Aggregations\Editora.cs" />
     <Compile Include="Entities\Leitores\Avaliado.cs" />
     <Compile Include="Entities\Leitores\Favorito.cs" />
     <Compile Include="Entities\Leitores\Leitor.cs" />
@@ -165,7 +165,6 @@
     <Compile Include="ValueObjects\Email.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Aggregations\" />
     <Folder Include="Factories\" />
   </ItemGroup>
   <ItemGroup>

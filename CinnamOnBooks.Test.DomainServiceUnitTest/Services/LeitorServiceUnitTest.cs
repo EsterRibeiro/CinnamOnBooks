@@ -1,11 +1,11 @@
 ﻿using CinnamOnBooks.Domain.Model.Entities.Leitores;
 using CinnamOnBooks.Domain.Model.Interfaces.Repositories;
 using CinnamOnBooks.Domain.Model.Services;
-using CinnamOnBooks.Domain.Model.ValueObjects;
-using CinnamOnBooks.Infra.DataAccess.Repositories;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using CinnamOnBooks.Infra.DataAccess.Repositories;
 using System;
-
+using CinnamOnBooks.Domain.Model.Enums;
+using CinnamOnBooks.Domain.Model.ValueObjects;
 
 namespace CinnamOnBooks.Test.DomainServiceUnitTest.Services
 {
@@ -28,8 +28,8 @@ namespace CinnamOnBooks.Test.DomainServiceUnitTest.Services
                 Nome = "Ester Ribeiro dos Santos",
                 Apelido = "Ester",
                 Sexo = 'F',
-                //Estado = 1,
-                //Email = Email. ("ester.santos@gmail.com")
+                Estado = EEstado.RioDeJaneiro,
+                Email = new Email("ester.santos@gmail.com")
             };
 
             //Execucao
@@ -40,7 +40,6 @@ namespace CinnamOnBooks.Test.DomainServiceUnitTest.Services
         }
 
         [TestMethod]
-        [ExpectedException(typeof(Exception))]
         public void LeitorInseridoSemSucesso()
         {
             ILeitorRepository leitorRepository = new LeitorMemDbRepository();
@@ -49,11 +48,10 @@ namespace CinnamOnBooks.Test.DomainServiceUnitTest.Services
             var leitor = new Leitor
             {
                 Id = Guid.NewGuid(),
-                Nome = "Ester Ribeiro dos Santos",
                 Apelido = "Ester",
                 Sexo = 'F',
-                //Estado = 1,
-                //Email = "ester.santos@gmail.com"
+                Estado = EEstado.RioDeJaneiro,
+                Email = new Email("ester.santos@gmail.com")
             };
 
              var result = leitorService.CriarLeitor(leitor);

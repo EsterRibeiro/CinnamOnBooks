@@ -10,16 +10,15 @@ namespace CinnamOnBooks.Domain.Model.ValueObjects
     public class Email
     {
         public const int TamanhoMaximoEmail = 254;
-        public string Endereco { get; set; }
+        public string EnderecoEmail { get; set; }
 
-        public Email(string endereco)
-        {
-            
-        }
+        public Email() { }
+
+        public Email(string endereco){ }
 
         public bool EmailValido(string endereco)
-        {    
-            MailAddress isValidMail = new MailAddress("ester.santos@gmail.com");
+        {
+            MailAddress m = new MailAddress(endereco);
             return true;
 
         }

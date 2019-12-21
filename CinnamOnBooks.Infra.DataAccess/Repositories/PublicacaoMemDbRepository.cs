@@ -5,11 +5,25 @@ using System.Collections.Generic;
 
 namespace CinnamOnBooks.Infra.DataAccess
 {
-    public class PublicacaoRepository: IPublicacaoRepository
+    public class PublicacaoMemDbRepository : IPublicacaoRepository
     {
-        public bool Create(Publicacao entity)
+        private readonly static List<Publicacao> _publicacao = new List<Publicacao>();
+
+
+        /// <summary>
+        /// Validacao da publicacao
+        /// </summary>
+        /// <param name="publicacao"></param>
+        /// <returns></returns>
+        public bool Create(Publicacao publicacao)
         {
-            throw new NotImplementedException();
+            int qtdPublicacao = _publicacao.Count;
+            _publicacao.Add(publicacao);
+
+            if (_publicacao.Count > qtdPublicacao)
+                return true;
+        
+            return false;
         }
 
         public bool Delete(Guid id)

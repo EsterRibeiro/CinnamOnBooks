@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace CinnamOnBooks.Domain.Model.Services
 {
     /// <summary>
-    /// Esse servico pode criar ou excluir a publicacao de um lancamento de livro na plataforma.
+    ///CRUD do serviço de lançamento de publicações do autor na plataforma
     /// </summary>
     public class PublicacaoService
     {
@@ -20,8 +20,20 @@ namespace CinnamOnBooks.Domain.Model.Services
             _publicacaoRepository = publicacaoRepository;
         }
 
+        /// <summary>
+        /// Autenticação na criação de uma publicação do autor, no caso de publicacoes sem autor
+        /// ou com a data de publicacao maior que a atual
+        /// </summary>
+        /// <param name="publicacao"></param>
+        /// <returns></returns>
         public bool CriarPublicacao(Publicacao publicacao)
         {
+            if (publicacao.Autor == null)
+                return false;
+
+            if (publicacao.DataPublicacao > DateTime.Now)
+                return false;
+
             _publicacaoRepository.Create(publicacao);
             return true;
         }
